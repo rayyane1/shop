@@ -27,8 +27,13 @@ nav div{
    gap: 20px;
 }
 main img{
-   width: 200px;
-   height: 200px;
+   width: 100%;
+   height: 50%;
+   object-fit: cover;
+}
+#cards{
+   display: flex;
+   flex-direction: column;   
 }
 .newBalance img{
    width: 160px;
@@ -37,6 +42,12 @@ main img{
 
 h1{
    text-align: center;
+}
+
+article .carte{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
 }
 
 .bouton{
@@ -97,12 +108,12 @@ h1{
 /* CARTE */
 .carte{
    display: flex;
-   background: #8005F2;
-   color: white;
-   flex-direction: column;
+   /*background: #8005F2;
+   color: white;*/
+   flex-direction: row;
    align-items: center;
    font-family: sans-serif;
-   text-transform: uppercase;
+   /*text-transform: uppercase;*/
    gap: 5px;
    border-radius: 16px;
    overflow: hidden;
