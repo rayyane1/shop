@@ -4,9 +4,15 @@
 html, body{
    font-family: 'Poppins', sans-serif;
 }
+
+body{
+   margin: 0;
+}
+
 nav img{
    width: 100px;
    height: 100px;
+   border-radius: 100%;
 }
 nav{
    display: flex;
@@ -14,6 +20,8 @@ nav{
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
+   padding: 8px;
+   background-color: #c38ff5;
 }
 li{
    list-style-type: none;
@@ -26,28 +34,48 @@ nav div{
    display: flex;
    gap: 20px;
 }
+
 main img{
-   width: 100%;
+   width: 50%;
    height: 50%;
    object-fit: cover;
 }
 #cards{
    display: flex;
-   flex-direction: column;   
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 20px;
 }
-.newBalance img{
-   width: 160px;
-   height: 220px;
+
+
+/* CARTE */
+.carte{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: sans-serif;
+   gap: 5px;
+   border-radius: 16px;
+   overflow: hidden;
+   -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24); 
+   box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24);
+   padding: 16px;
+   transition: all 1s ease-in-out;
+   width: 25%;
+}
+
+.carte img{
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+
+.carte:hover{
+   transform: scale(1.1);
 }
 
 h1{
    text-align: center;
-}
-
-article .carte{
-   display: flex;
-   align-items: center;
-   flex-direction: row;
 }
 
 .bouton{
@@ -103,32 +131,4 @@ article .carte{
 
 .lien:hover{
    color: #8005F2;
-}
-
-/* CARTE */
-.carte{
-   display: flex;
-   /*background: #8005F2;
-   color: white;*/
-   flex-direction: row;
-   align-items: center;
-   font-family: sans-serif;
-   /*text-transform: uppercase;*/
-   gap: 5px;
-   border-radius: 16px;
-   overflow: hidden;
-   -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24); 
-   box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.24);
-   padding: 16px;
-   transition: all 1s ease-in-out;
-}
-
-.carte img{
-   width: 100%;
-   height: 100px;
-   object-fit: cover;
-}
-
-.carte:hover{
-   transform: scale(1.1);
 }
