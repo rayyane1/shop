@@ -132,3 +132,8 @@ h1{
 .lien:hover{
    color: #8005F2;
 }
+footer{
+   text-align: center;
+   background-color: #c38ff5;
+   padding-bottom: 10px;
+}
